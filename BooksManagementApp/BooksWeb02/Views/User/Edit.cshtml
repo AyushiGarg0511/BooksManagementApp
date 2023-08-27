@@ -1,0 +1,28 @@
+﻿@using ConceptArchitect.BookManagement
+@model User
+@{
+    ViewBag.ExcludeCommonCode = false;
+}
+<h2>Edit Profile</h2>
+<p>Form was last updated at @DateTime.Now</p>
+<p>@Html.ValidationSummary()</p>
+
+<form asp-action="Edit" method="POST">
+
+    <label asp-for="@Model.email" class='form-label'>Email</label>
+    <input type='email' name="email" value="@Model.email" class='form-control' readonly style="background-color:gray" />
+
+    <label asp-for="@Model.password" class='form-label'>password</label>
+    <input type='password' name="password" value="@Model.password" class='form-control' />
+
+    <label asp-for="@Model.name" class='form-label'>name</label>
+    <input type='text' name="name" value="@Model.name" class='form-control' />
+
+    <label asp-for="@Model.BirthDate" class='form-label'>BirthDate</label>
+    <input type='date' name="BirthDate" value="@Model.BirthDate" class='form-control' />
+
+    <div>
+        <input type="submit" value="Change Profile" class='btn btn-warning form-control' />
+        <a asp-action="delete" asp-route-id="@Model.email" class="btn  btn-danger">Delete</a>
+    </div>
+</form>

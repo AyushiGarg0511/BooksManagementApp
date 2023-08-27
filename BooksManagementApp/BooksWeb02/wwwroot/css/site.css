@@ -1,0 +1,338 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: hsl(20, 43%, 93%);
+}
+
+.author-details-photo {
+    width: 250px;
+    border: 15px solid black;
+    padding: 5px;
+    box-shadow: -5px -5px 5px gray;
+    border-radius: 20px;
+    
+}
+
+input[type=submit]
+{
+    margin-top:15px;
+}
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    background-image: url(https://freepngimg.com/thumb/book/6-books-png-image-with-transparency-background.png);
+    background-repeat: no-repeat;
+    font-weight: 900;
+    background-position: right bottom;
+}
+  
+   
+
+
+.Search input {
+    padding: 0.4rem 0.9rem;
+}
+
+.HelpCentre {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 15px;
+    background-color: azure;
+    text-decoration: none;
+    background-color: black;
+    margin-left: 82rem;
+    border: 1px solid black;
+    padding: 1rem 3rem;
+}
+
+    .HelpCentre a {
+        color: white;
+    }
+
+        .HelpCentre a:hover {
+            background-color: white;
+            color: black;
+        }
+
+.heading {
+    color: wheat;
+    font-weight: 900;
+    font-size: 3rem;
+    display: block;
+    position: absolute;
+    left: 1rem;
+}
+
+nav {
+    color: rgb(16, 9, 9);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: 'Lato', sans-serif;
+    background:#a20e0eff;
+    text-decoration: underline;
+    font-size:18px;
+}
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav li {
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+
+.dropbtn {
+    background-color: #000000;
+    color: #f8f6f6;
+    padding: 10px 20px;
+    font-size: medium;
+    border: none;
+    font-weight: bold;
+    min-width:110px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    width: 110.5px;
+    z-index: 2;
+    top:90%;
+    right:3%;
+    
+  
+}
+
+    .dropdown-content a {
+        color: #fbf6f6;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-weight: bold;
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.content {
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+}
+
+.aa {
+    font-weight: bolder;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Book Antiqua';
+    overflow: hidden; 
+    border-right: .15em; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: typing 5s steps(30, end), blink-caret .5s step-end infinite;
+    color: black;
+    letter-spacing: .10em;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange
+    }
+}
+
+
+
+
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #070110;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+table {
+    text-align: center;
+    z-index: 5;
+}
+
+    table th {
+        font-weight: 900;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+table, th, td {
+    border: 3px solid #000000;
+    border-collapse: collapse;
+    color: black;
+    background-color: rgb(243, 231, 216);
+    opacity: 0.8;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+
+
+table a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #a11717e5;
+    text-decoration: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+td img {
+    display: block;
+    margin: 0px auto;
+}
+
+.addbookform {
+    background-color: white;
+    border: 1px solid black;
+    padding: 2rem 3rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .addbookform label, input, button, a {
+        margin: 0.2rem;
+    }
+
+    .addbookform label {
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-weight: 900;
+    }
+
+    .addbookform input {
+        border-radius: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .addbookform a {
+        text-decoration: none;
+        font-weight: 700;
+        color: black;
+        margin-bottom: -1rem;
+    }
+
+    .addbookform button {
+        margin: 1rem 0rem;
+        padding: 0.5rem 3rem;
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        font-family: sans-serif;
+        font-weight: 700;
+    }
+
+        .addbookform button:hover {
+            background-color: white;
+            color: black;
+        }
+
+    .addbookform a:hover {
+        color: red;
+    }
+
+
+@keyframes fadeInForm {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+form {
+    width: 300px;
+    background-color: #826c6c;
+    padding:10px;
+    animation: fadeInForm 1s ease-in-out forwards;
+    border:solid;
+    padding:13px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+
+}
+
+footer {
+    bottom: 0;
+    color: #707070;
+    height: 3px;
+    
+    position: relative;
+    width: 100%;
+}
+
+h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,32 @@
+﻿@using ConceptArchitect.BookManagement
+@model User
+@{
+    ViewBag.ExcludeCommonCode = true;
+}
+<h2>SignUp </h2>
+
+
+
+<form asp-action="Add" method="POST">
+
+    <label asp-for="@Model.email" class='form-label'>Email</label>
+    <input type='email' name="email" value="@Model.email" class='form-control' />
+
+    <label asp-for="@Model.password" class='form-label'>Password</label>
+    <input type='password' name="password" value="@Model.password" class='form-control' />
+
+    <label asp-for="@Model.name" class='form-label'>Name</label>
+    <input type='text' name="name" value="@Model.name" class='form-control' />
+
+    <label asp-for="@Model.Photo" class='form-label'>Photo</label>
+    <input type='text' name="photo" value="@Model.Photo" class='form-control' />
+
+
+    <div>
+
+        <input type="submit" value="Add" class='btn btn-primary form-control' />
+        <div class="btn btn-info form-control">
+            <a class="nav-link text-light" asp-controller="user" asp-action="login"  >Already have a Account, Login Now</a>
+        </div>
+    </div>
+</form>

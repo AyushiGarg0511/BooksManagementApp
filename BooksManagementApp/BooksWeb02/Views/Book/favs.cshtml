@@ -1,0 +1,24 @@
+﻿@model IEnumerable<ConceptArchitect.BookManagement.Book>
+@{
+    ViewBag.ExcludeCommonCode = false;
+}
+
+<h2>Favoruites Books</h2>
+
+<div class="row">
+
+    @foreach (var author in Model)
+    {
+        <div class='col col-md-3'>
+            <div class="card" style="width: 18rem; margin-bottom:5rem">
+                <img class="card-img-top" src="@author.coverphoto" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">@author.title</h5>
+                    <p class="card-text">author Desc</p>
+                    <a asp-action="details" asp-route-id="@author.Id" class="btn  btn-primary">details</a>
+                    <a asp-action="deletefavs" asp-route-id="@author.Id" class="btn  btn-danger">remove from favourite</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

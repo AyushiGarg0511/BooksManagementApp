@@ -1,0 +1,29 @@
+﻿@model IEnumerable<ConceptArchitect.BookManagement.review>
+
+@{
+    ViewBag.ExcludeCommonCode = false;
+}
+
+<h2>All Reviews</h2>
+
+<div class="row">
+
+    @foreach (var author in Model)
+    {
+        <div class='col col-md-3'>
+            <div class="card" style="width: 18rem;margin-bottom:5rem">
+                
+                <div class="card-body">
+                    <h5 class="card-title">@author.book_id</h5>
+                    <p class="card-text">@author.reviewer_email</p>
+                    <p class="card-text">@author.rating</p>
+                    <p class="card-text">@author.details</p>
+                </div>
+                @if(ViewBag.uname == author.reviewer_email)
+                {
+                    <a asp-action="delete" asp-route-id="@author.book_id" class="btn  btn-danger">Delete</a>
+                }
+            </div>
+        </div>
+    }
+</div>

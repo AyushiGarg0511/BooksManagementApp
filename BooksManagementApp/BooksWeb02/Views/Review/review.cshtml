@@ -1,0 +1,35 @@
+﻿@using ConceptArchitect.BookManagement
+@model review
+@{
+    ViewBag.ExcludeCommonCode = false;
+}
+<h2>Add Review</h2>
+
+<p>Form was last updated at @DateTime.Now</p>
+<p>@Html.ValidationSummary()</p>
+<form asp-action="review" method="POST">
+
+    <label asp-for="@Model.book_id" class='form-label'>Id</label>
+    <input type='text' name="book_id" value="@Model.book_id" class='form-control' readonly style="background-color:gray" />
+
+    <label asp-for="@Model.reviewer_email" class='form-label'>reviewer_email</label>
+    <input type='email' name="reviewer_email" value="@Model.reviewer_email" class='form-control' readonly style="background-color:gray" />
+
+    <label asp-for="@Model.rating" class='form-label'>rating</label>
+    <input type='number' name="rating" value="@Model.rating" class='form-control' />
+
+
+    <label asp-for="@Model.title" class='form-label'>title</label>
+    <input type='text' name="title" value="@Model.title" class='form-control' />
+
+    <label asp-for="@Model.details" class='form-label'>details</label>
+    <input type='text' name="details" value="@Model.details" class='form-control' />
+
+
+
+
+    <div>
+
+        <input type="submit" value="Add Review" class='btn btn-primary form-control' />
+    </div>
+</form>
